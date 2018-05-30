@@ -1,7 +1,9 @@
 # PicoCPU Calculator for Digilent Nexys 3 Spartan-6
 
 PicoCPU calculator program by Tónis Lusmägi, TTÜ
+
 PicoCPU code modified to run the calculator program by Tónis Lusmägi, TTÜ
+
 Python Assembly translator script modified by Tónis Lusmägi, TTÜ
 
 ## Calculator functions
@@ -9,7 +11,7 @@ Python Assembly translator script modified by Tónis Lusmägi, TTÜ
 	ADD
 	SUB
 	AND (bitwise)
-	OR 	(bitwise)
+	OR (bitwise)
 
 ## Input bitwidth
 
@@ -28,7 +30,7 @@ Python Assembly translator script modified by Tónis Lusmägi, TTÜ
 		TopLevel.vhd
 		VectorToSevenSeg.vhd
 	Synthezise in ISE
-	Generate Bitstream
+	Generate bitstream
 	Program Digilent Nexys 3 Spartan 6 with the bitstream:
 		open terminal in project folder
 		$ djtgcfg enum
@@ -41,7 +43,7 @@ Python Assembly translator script modified by Tónis Lusmägi, TTÜ
 
 ## Python Assembly translator script
 
-	machine_script folder contains a script to convert instructions into machinecode.
+	<machine_script> folder contains a python script (+README) to convert PicoCPU instructions into machinecode.
 
 
 ## Credits

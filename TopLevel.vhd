@@ -50,23 +50,17 @@ signal SystemClk: std_logic;
 signal BE_debounced: std_logic;
 signal FlagOut: std_logic_vector (3 downto 0);
 signal ALUVal: std_logic_vector (7 downto 0);
+
 begin
---Debouncer_comp: Debouncer  port map (rst,clk,ClkBttn,ClkBtnout);
 
 Debouncer_comp: Debouncer  port map (clk,BE,BE_debounced);
-
 PicoCPU_comp: PicoCPU  port map (rst,SystemClk,SW,BE_debounced,FlagOut,ALUVal);
 SevSeg_comp: VectorToSevenSeg port map (clk,ALUVal,AN,SevenSeg);
 ---------------------------------------------
 --      Clock Source
 ---------------------------------------------
---process(clk,ClkBtnout,ClockSrc)begin
-	--if(ClockSrc='1')then
-		--SystemClk<= ClkBtnout;
-	--else
+
 		SystemClk<= clk;
-	--end if;
---end process;
 
 FlagOutput(3 downto 0) <= 	FlagOut;
 LED_out <= BE;
