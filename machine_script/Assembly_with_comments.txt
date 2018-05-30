@@ -1,0 +1,40 @@
+Load_A_Mem	00000011 *load from mem3 (BTN) 
+JmpZ		00000000 *JumpZ to 0
+Load_A_Mem	00000011 *load from mem3 (BTN)
+JmpZ		00000101 *JumpZ to 5
+Jump		00000010 *Jump to 2
+Load_A_Mem	00000001 *operator in
+Sub_A_Dir	00001000
+JmpZ		00010100 *to ADD line
+Load_A_Mem	00000001 (operator in)
+Sub_A_Dir	00000100
+JmpZ		00011000 *to SUB line*
+Load_A_Mem	00000001 (operator in)
+Sub_A_Dir	00000010
+JmpZ		00011100 *to AND line*
+Load_A_Mem	00000001 (operator in)
+Sub_A_Dir	00000001
+JmpZ		00100010 *to OR line*
+Load_A_Mem	00000001 (operator in)
+Sub_A_Dir	00000001
+Jump		00000000 *beginning
+Load_A_Mem	00000100 *ADD begin, read operands from mem4
+Add_A_Mem	00000010 *add current operand SW values
+Store_A_Mem	00000100 *store new value to A
+Jump		00000000 *beginning
+Load_A_Mem	00000100 *SUB begin, read operands from mem4
+Sub_A_Mem	00000010 *add current operand SW values
+Store_A_Mem	00000100 *store new value to A
+Jump		00000000 *beginning
+Load_A_Mem	00000100 *AND begin, read operands from mem4
+Load_B_A	00000001 *A mem to R. Reg
+Load_A_Mem	00000010 *read operands from mem2 SW
+And_A_B		00000000 *AND with ACC and R
+Store_A_Mem	00000100 *store new value to A
+Jump		00000000 *beginning
+Load_A_Mem	00000100 *OR begin, read operands from mem4
+Load_B_A	00000001 *A mem to R. Reg
+Load_A_Mem	00000010 *read operands from mem2 SW
+OR_A_B		00000000 *OR with ACC and R
+Store_A_Mem	00000100 *store new value to A
+Jump		00000000 *beginning

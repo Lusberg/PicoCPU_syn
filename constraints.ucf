@@ -1,0 +1,33 @@
+NET clk LOC = V10;
+NET rst LOC = C4;
+NET ClkBttn LOC = D9;
+
+NET FlagOutput<0> LOC = U16;
+NET FlagOutput<1> LOC = V16;
+NET FlagOutput<2> LOC = U15;
+NET FlagOutput<3> LOC = V15;
+
+NET SevenSeg<6> LOC = T17;
+NET SevenSeg<5> LOC = T18;
+NET SevenSeg<4> LOC = U17;
+NET SevenSeg<3> LOC = U18;
+NET SevenSeg<2> LOC = M14;
+NET SevenSeg<1> LOC = N14;
+NET SevenSeg<0> LOC = L14;
+
+NET AN<3> LOC = P17;
+NET AN<2> LOC = P18;
+NET AN<1> LOC = N15;
+NET AN<0> LOC = N16;
+
+NET SW<0> LOC = T10;
+NET SW<1> LOC = T9;
+NET SW<2> LOC = V9;
+NET SW<3> LOC = M8;
+NET SW<4> LOC = N8;
+NET SW<5> LOC = U8;
+NET SW<6> LOC = V8;
+NET SW<7> LOC = T5;
+
+NET BE LOC = B8;
+NET LED_out LOC = T11;
