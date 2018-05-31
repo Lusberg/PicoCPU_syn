@@ -41,10 +41,13 @@ Python Assembly translator script modified by Tónis Lusmägi, TTÜ
 
 ![](/assets/Digilent_Nexys_3_Spartan-6_PicoCPU_calculator.png?raw=true)
 
+## Demo
+
+https://www.youtube.com/watch?v=_rb3e2qVloA
+
 ## Python Assembly translator script
 
 	<machine_script> folder contains a python script (+README) to convert PicoCPU instructions into machinecode.
-
 
 ## Credits
 
