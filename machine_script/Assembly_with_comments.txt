@@ -23,7 +23,7 @@ Add_A_Mem	00000010 *add current operand SW values
 Store_A_Mem	00000100 *store new value to A
 Jump		00000000 *beginning
 Load_A_Mem	00000100 *SUB begin, read operands from mem4
-Sub_A_Mem	00000010 *add current operand SW values
+Sub_A_Mem	00000010 *sub current operand SW values
 Store_A_Mem	00000100 *store new value to A
 Jump		00000000 *beginning
 Load_A_Mem	00000100 *AND begin, read operands from mem4
