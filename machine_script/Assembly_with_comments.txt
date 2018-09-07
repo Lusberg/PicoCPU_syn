@@ -29,7 +29,7 @@ Jump		00000000 *beginning
 Load_A_Mem	00000100 *AND begin, read operands from mem4
 Load_B_A	00000001 *A mem to R. Reg
 Load_A_Mem	00000010 *read operands from mem2 SW
-And_A_B		00000000 *AND with ACC and R
+And_A_B	00000000 *AND with ACC and R
 Store_A_Mem	00000100 *store new value to A
 Jump		00000000 *beginning
 Load_A_Mem	00000100 *OR begin, read operands from mem4
